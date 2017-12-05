@@ -1,9 +1,11 @@
 # Comment-Toxicity-Analysis (BE Project)
 
-## Refrence Papers
-[Download here](https://drive.google.com/drive/folders/0Bxa25eJ11va5WWRMQ19Rb2MxT1k?usp=sharing)
+## Initial Stage
 
-## Refrence from Paper
++ It tells toxicity after Analysing the Comment.
+  + If a comment is Toxic or Bad then it will return Toxic else it will return toxic.
+
+## Helpful Refrenceses 
 
 + [githu mediawiki-utilities](https://github.com/mediawiki-utilities/python-mwdiffs)
 + [Detecting Insults in Social Commentary Kaggle](https://www.kaggle.com/c/detecting-insults-in-social-commentary)
