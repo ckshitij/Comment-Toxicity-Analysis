@@ -4,6 +4,8 @@
 
 + It tells toxicity after Analysing the Comment.
   + If a comment is Toxic or Bad then it will return Toxic else it will return toxic.
+  
+ ![img](https://github.com/ckshitij/Comment-Toxicity-Analysis/blob/master/front_view.png)
 
 ## Helpful Refrenceses 
 
