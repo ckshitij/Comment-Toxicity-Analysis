@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Toxic</title>
+	<script
+  	src="https://code.jquery.com/jquery-3.2.1.min.js"
+  	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  	crossorigin="anonymous">
+  	</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body style="background-image: url('./Image/toxic.jpg');">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <div style="float: center;
+		width: 50%;
+		height: 50%;
+		padding-top: 7%;
+		padding-left: 10%;
+		padding-right: 10%;
+		position:absolute;
+		z-index:-1;
+		margin-left:30%;
+		margin-top:15%;
+		background-color: rgba(140, 140, 140,0.3);
+		border-radius: 10px;
+		color: rgb(255, 255, 255);
+		font-size: 40px; ">
+
+
+		<h5>Enter Comment : </h5><input type="text" name="val" id="data" placeholder="Enter here" >
+		<div style="float: center;margin-left: 30%;">
+			<button class="btn waves-effect waves-light" type="submit" name="action" id="submit" >Submit<i class="material-icons right">send</i>
+		  	</button>
+		</div>
+		<div class="chip" style="float: center;margin-left: 30%;margin-top:5%;width: 150px;
+    height: 40px;
+    background: rgba(217, 217, 217,0.3);font-size: 20px;">
+			<div id= "ans"></div>
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+	<script type="text/javascript">
+
+		var uri = "http://localhost:4000";
+
+		$('#submit').click(function(){
+			    $('#ans').html('');
+			    var settings = {
+			      "async": true,
+			      "crossDomain": true,
+			      "url": uri+"/",
+			      "method": "POST",
+			      "headers": {
+			        "content-type": "application/x-www-form-urlencoded"
+			      },
+			      "data": {
+			        "comnt": $('#data').val()
+			     }
+			  }
+
+			  $.ajax(settings).done(function (response) {
+			      console.log(response);
+			      $('#ans').html(response);
+			  })
+			  .fail(function (jqXHR, textStatus, errorThrown) {
+
+			  });
+		})
+
+	</script>
+</body>
+</html>
