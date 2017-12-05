@@ -1,10 +1,19 @@
 # Comment-Toxicity-Analysis (BE Project)
 
+## Dataset
+[DataSet Download Site](https://figshare.com/articles/Wikipedia_Talk_Corpus/4264973)
+
+## About Files
+
++ **ToxityAnalysis.ipynb** -> For building model
++ **finalized_model.pkl** -> Saved ML model
++ **RunModel.py** -> For Reloading model and analysing Comment
++ **app.js** -> For Running nodejs app
+
 ## Initial Stage
 
 + It tells toxicity after Analysing the Comment.
   + If a comment is Toxic or Bad then it will return Toxic else it will return toxic.
-  
  ![img](https://github.com/ckshitij/Comment-Toxicity-Analysis/blob/master/front_view.png)
 
 ## Helpful Refrenceses 
