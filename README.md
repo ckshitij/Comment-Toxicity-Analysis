@@ -1,5 +1,16 @@
 # Comment-Toxicity-Analysis (BE Project)
 
+## Index 
+
+  + **Dataset**
+  + **Initial Stage**
+     + **About Files**
+     + **Fault**
+  + **Final Engine**
+  + **How to Configure Final Engine**
+  + **Improvement Scope**
+  + **Helpful Refrenceses**
+
 ## Dataset
 + [DataSet Download Site](https://figshare.com/articles/Wikipedia_Talk_Corpus/4264973)
 + [Engine Notebook Kaggle](https://www.kaggle.com/ckshitij/toxic-comment-classifier)
@@ -40,7 +51,7 @@
   
   ![img2](https://github.com/ckshitij/Comment-Toxicity-Analysis/blob/master/2.png)
   
-  ## How to Configure Final Engine
+ ## How to Configure Final Engine
   
   + First Download the code directly from here in zip or clone through git.
   + Then go to the **engine folder**.
@@ -57,7 +68,7 @@
     
     ```
     
-   ## Improvement Scope
+ ## Improvement Scope
    
    + You Can improve this Code by *Increasing the n-gram range (1,3or4)* for **Word-Level** and *n-gram range (1,10)* for **Char-Level**.
    + You can use **Deeplearning RNN (LSTM)**.
