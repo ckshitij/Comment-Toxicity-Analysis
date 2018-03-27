@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Title Page-->
+    <title>Toxic Engine</title>
+	<!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Snac theme tempalte">
+    <meta name="author" content="NDT">
+    <meta name="keywords" content="Snac theme template">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	
+    
+
+    
+
+	<!-- JavaScript AJAX part -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="{{ url_for('static', filename='js/form.js') }}"></script>
+</head>
+<body style="background-image: url({{ url_for('static', filename='images/toxic.jpg') }})">
+
+	<div style="float: center;width: 50%;height: 70%;padding-top: 10%;padding-left: 10%;padding-right: 10%;
+        position:absolute;
+        z-index:-1;
+        margin-left:25%;
+        margin-top:10%;
+        margin-bottom: 10%;
+        background-color: rgba(140, 140, 140,0.3);
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        font-size: 40px; ">
+
+		<form action="/process" method="POST">
+
+			<h5 style="color:black;">Enter Comment : </h5><input style="color:grey;" type="text" name="enginetext" id="enginetext" placeholder="Enter the Comment">
+			
+            <div style="float: center;margin-left: 30%;padding-bottom: 10%;">
+                <button class="btn waves-effect waves-light" type="submit" name="submit" id="submit" >Submit<i class="material-icons right" style="border-radius: 10px;">send</i>
+                </button>
+            </div>
+            
+		</form>
+		<div  style="float: center;margin-left: 30%;margin-top:3%;width: 200px;
+    height: 80px;
+    background: rgba(217, 217, 217,0.3);font-size: 20px;border-radius: 10px;">
+
+            <p style="margin-left:25%;
+        margin-top:15%;color: black;">Toxicity<div id= "ans" style="color:black;margin-left:30%;margin-top:5%;margin-bottom: 10%;"></div></p>
+        </div>
+	</div>
+
+</body>
+</html>
