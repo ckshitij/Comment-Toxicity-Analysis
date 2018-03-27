@@ -4,18 +4,33 @@
 + [DataSet Download Site](https://figshare.com/articles/Wikipedia_Talk_Corpus/4264973)
 + [Engine Notebook Kaggle](https://www.kaggle.com/ckshitij/toxic-comment-classifier)
 
-## About Files
 
-+ **ToxityAnalysis.ipynb** -> For building model
-+ **finalized_model.pkl** -> Saved ML model
-+ **RunModel.py** -> For Reloading model and analysing Comment
-+ **app.js** -> For Running nodejs app
+## Initial Stage 
 
-## Initial Stage
-
++ This Initial Model is just for Comparing or for starting Without Preprocessing and Ensembling techniques.
 + It tells toxicity after Analysing the Comment.
   + If a comment is Toxic or Bad then it will return Toxic else it will return toxic.
  ![img](https://github.com/ckshitij/Comment-Toxicity-Analysis/blob/master/front_view.png)
+  
+  ### About Files
+
+  + **ToxityAnalysis.ipynb** -> For building model
+  + **finalized_model.pkl** -> Saved ML model
+  + **RunModel.py** -> For Reloading model and analysing Comment
+  + **app.js** -> For Running nodejs app
+  
+ ### Fault 
+ 
+ + It take **more time** because it reload python script evertime on pressing Submitting the Comment. 
+ 
+## Final Engine 
+
++ Here is the **engine** of the model which is hosted using **Flask**.
++ It **Resolved the Fault** of *Initial Stage Model*.
++ It Only takes time on **first time loading**.
++ It **Returns the Percentage** instead of Class. 
+![img1](https://github.com/ckshitij/Comment-Toxicity-Analysis/blob/master/1.png)
+![img2](https://github.com/ckshitij/Comment-Toxicity-Analysis/blob/master/2.png)
 
 ## Helpful Refrenceses 
 
