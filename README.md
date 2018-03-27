@@ -10,6 +10,7 @@
 + This Initial Model is just for Comparing or for starting Without Preprocessing and Ensembling techniques.
 + It tells toxicity after Analysing the Comment.
   + If a comment is Toxic or Bad then it will return Toxic else it will return toxic.
+  
  ![img](https://github.com/ckshitij/Comment-Toxicity-Analysis/blob/master/front_view.png)
   
   ### About Files
@@ -19,9 +20,9 @@
   + **RunModel.py** -> For Reloading model and analysing Comment
   + **app.js** -> For Running nodejs app
   
- ### Fault 
+  ### Fault 
  
- + It take **more time** because it reload python script evertime on pressing Submitting the Comment. 
+   + It take **more time** because it reload python script evertime on pressing Submitting the Comment. 
  
 ## Final Engine 
 
@@ -29,11 +30,42 @@
 + It **Resolved the Fault** of *Initial Stage Model*.
 + It Only takes time on **first time loading**.
 + It **Returns the Percentage** instead of Class. 
-![img1](https://github.com/ckshitij/Comment-Toxicity-Analysis/blob/master/1.png)
-![img2](https://github.com/ckshitij/Comment-Toxicity-Analysis/blob/master/2.png)
++ you Can See the **Jupyter-notebook** https://github.com/ckshitij/Comment-Toxicity-Analysis/blob/master/engine/Models/notebook.ipynb 
 
-## Helpful Refrenceses 
+  + Here its gives the **Toxicity Percentage of the Comment**. 
+  
+  ![img1](https://github.com/ckshitij/Comment-Toxicity-Analysis/blob/master/1.png)
+  
+  + You Can see the **Difference between the Percentage** of the comment
+  
+  ![img2](https://github.com/ckshitij/Comment-Toxicity-Analysis/blob/master/2.png)
+  
+  ## How to Configure Final Engine
+  
+  + First Download the code directly from here in zip or clone through git.
+  + Then go to the **engine folder**.
+  + Click On the above **[Engine Notebook Kaggle](https://www.kaggle.com/ckshitij/toxic-comment-classifier)** and download all the .pkl file in **Models** folder.
+  + Then to to the **Terminal** and run **app.py** file.
+  + Then open your **Web Browser** and type **http://localhost:5000/**.
+  
+    ```sh
+    
+    git clone https://github.com/ckshitij/Comment-Toxicity-Analysis.git
+    cd Comment-Toxicity-Analysis
+    cd engine
+    python3 app.py
+    
+    ```
+    
+   ## Improvement Scope
+   
+   + You Can improve this Code by *Increasing the n-gram range (1,3or4)* for **Word-Level** and *n-gram range (1,10)* for **Char-Level**.
+   + You can use **Deeplearning RNN (LSTM)**.
 
+## Helpful Refrenceses
+
++ [google Perspective](https://www.perspectiveapi.com/)
++ [kaggle Competition on Toxicity](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge)
 + [githu mediawiki-utilities](https://github.com/mediawiki-utilities/python-mwdiffs)
 + [Detecting Insults in Social Commentary Kaggle](https://www.kaggle.com/c/detecting-insults-in-social-commentary)
 + [Content Analysis](https://us.sagepub.com/en-us/nam/content-analysis/book234903)
