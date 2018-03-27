@@ -1,8 +1,8 @@
 # Comment-Toxicity-Analysis (BE Project)
 
 ## Dataset
-[DataSet Download Site](https://figshare.com/articles/Wikipedia_Talk_Corpus/4264973)
-[Engine Notebook Kaggle](https://www.kaggle.com/ckshitij/toxic-comment-classifier)
++ [DataSet Download Site](https://figshare.com/articles/Wikipedia_Talk_Corpus/4264973)
++ [Engine Notebook Kaggle](https://www.kaggle.com/ckshitij/toxic-comment-classifier)
 
 ## About Files
 
