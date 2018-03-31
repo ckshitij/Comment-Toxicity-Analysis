@@ -1,4 +1,4 @@
-# Comment-Toxicity-Analysis (BE Project)
+# Comment-Toxicity-Analysis 
 
 ## Index 
 
@@ -72,6 +72,7 @@
    
    + You Can improve this Code by *Increasing the n-gram range (1,3or4)* for **Word-Level** and *n-gram range (1,10)* for **Char-Level**.
    + You can use **Deeplearning RNN (LSTM)**.
+   + You can use **word level Cnn Model** too.
 
 ## Helpful Refrenceses
 
